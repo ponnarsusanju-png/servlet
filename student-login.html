@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Student Login | CodeQuest</title>
+
+    <!-- Common CSS file -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <header class="navbar">
+
+        <a href="index.html" class="logo">
+            &lt;/&gt; Code<span>Quest</span>
+        </a>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="student-registration.html">Registration</a>
+            <a href="student-login.html">Student Login</a>
+            <a href="admin-login.html">Admin Login</a>
+            <a href="missions.html">Missions</a>
+            <a href="leaderboard.html">Leaderboard</a>
+        </nav>
+
+    </header>
+
+    <!-- Student Login Section -->
+    <main class="login-page">
+
+        <div class="form-container login-card">
+
+            <div class="login-icon">&lt;/&gt;</div>
+
+            <p class="login-tag">WELCOME BACK, CODER!</p>
+
+            <h2>Student Login</h2>
+
+            <p class="login-description">
+                Sign in to continue your coding adventure.
+            </p>
+
+            <form id="studentLoginForm">
+
+                <label for="username">Username or Email</label>
+
+                <input
+                    type="text"
+                    id="username"
+                    name="username"
+                    placeholder="Enter your username or email"
+                    autocomplete="username"
+                    required
+                >
+
+                <label for="password">Password</label>
+
+                <input
+                    type="password"
+                    id="password"
+                    name="password"
+                    placeholder="Enter your password"
+                    autocomplete="current-password"
+                    required
+                >
+
+                <div class="login-options">
+                    <label class="remember-label">
+                        <input type="checkbox" id="remember">
+                        Remember me
+                    </label>
+
+                    <a href="#"
+                       id="forgotPassword"
+                       class="forgot-link">
+                        Forgot password?
+                    </a>
+                </div>
+
+                <button type="submit" class="btn primary login-button">
+                    Login to CodeQuest &rarr;
+                </button>
+
+                <p id="loginMessage" class="login-message"
+                   role="status" aria-live="polite"></p>
+
+            </form>
+
+            <div class="login-divider">
+                <span>NEW TO CODEQUEST?</span>
+            </div>
+
+            <a href="student-registration.html"
+               class="register-link">
+                Create a Student Account
+            </a>
+
+            <p class="back-home">
+                <a href="index.html">&larr; Back to Home</a>
+            </p>
+
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <h3>&lt;/&gt; CodeQuest</h3>
+        <p>Learn. Code. Compete. Level Up.</p>
+        <p>&copy; 2026 CodeQuest. All rights reserved.</p>
+    </footer>
+
+    <!-- Demo-only JavaScript -->
+    <script>
+        const loginForm = document.getElementById("studentLoginForm");
+        const loginMessage = document.getElementById("loginMessage");
+
+        loginForm.addEventListener("submit", function(event) {
+            event.preventDefault();
+
+            loginMessage.textContent =
+                "Login interface is working. Connect a backend to verify your account.";
+
+            loginMessage.className = "login-message info";
+        });
+
+        document.getElementById("forgotPassword")
+            .addEventListener("click", function(event) {
+                event.preventDefault();
+
+                loginMessage.textContent =
+                    "Password recovery will be available after backend integration.";
+
+                loginMessage.className = "login-message info";
+            });
+    </script>
+
+</body>
+</html>

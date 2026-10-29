@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Admin Login | CodeQuest</title>
+
+    <!-- Common CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <header class="navbar">
+
+        <a href="index.html" class="logo">
+            &lt;/&gt; Code<span>Quest</span>
+        </a>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="student-registration.html">Registration</a>
+            <a href="student-login.html">Student Login</a>
+            <a href="admin-login.html" class="active">Admin Login</a>
+            <a href="missions.html">Missions</a>
+            <a href="leaderboard.html">Leaderboard</a>
+        </nav>
+
+    </header>
+
+    <!-- Admin Login Section -->
+    <main class="login-page">
+
+        <div class="form-container login-card admin-card">
+
+            <div class="admin-icon" aria-hidden="true">&#128274;</div>
+
+            <p class="login-tag">RESTRICTED ACCESS</p>
+
+            <h2>Admin Login</h2>
+
+            <p class="login-description">
+                Sign in to manage the CodeQuest platform.
+            </p>
+
+            <form id="adminLoginForm">
+
+                <label for="adminUsername">Admin Username</label>
+
+                <input
+                    type="text"
+                    id="adminUsername"
+                    name="username"
+                    placeholder="Enter admin username"
+                    autocomplete="username"
+                    required
+                >
+
+                <label for="adminPassword">Password</label>
+
+                <input
+                    type="password"
+                    id="adminPassword"
+                    name="password"
+                    placeholder="Enter admin password"
+                    autocomplete="current-password"
+                    required
+                >
+
+                <button type="submit" class="btn primary login-button">
+                    Admin Sign In &rarr;
+                </button>
+
+                <p
+                    id="adminMessage"
+                    class="login-message"
+                    role="status"
+                    aria-live="polite">
+                </p>
+
+            </form>
+
+            <div class="security-note">
+                <span aria-hidden="true">&#128274;</span>
+                Authorized administrators only
+            </div>
+
+            <p class="back-home">
+                <a href="index.html">&larr; Back to Home</a>
+            </p>
+
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <h3>&lt;/&gt; CodeQuest</h3>
+        <p>Learn. Code. Compete. Level Up.</p>
+        <p>&copy; 2026 CodeQuest. All rights reserved.</p>
+    </footer>
+
+    <!-- Front-End Demonstration -->
+    <script>
+        const adminForm = document.getElementById("adminLoginForm");
+        const adminMessage = document.getElementById("adminMessage");
+
+        adminForm.addEventListener("submit", function(event) {
+            event.preventDefault();
+
+            const username = document.getElementById("adminUsername").value.trim();
+            const password = document.getElementById("adminPassword").value;
+
+            if (username === "" || password === "") {
+                adminMessage.textContent = "Please enter your username and password.";
+                adminMessage.className = "login-message error";
+                return;
+            }
+
+            adminMessage.textContent =
+                "Login form works. Connect a backend to authenticate administrators.";
+
+            adminMessage.className = "login-message info";
+        });
+    </script>
+
+</body>
+</html>

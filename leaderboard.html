@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Leaderboard | CodeQuest</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <header class="navbar">
+
+        <a href="index.html" class="logo">
+            &lt;/&gt; Code<span>Quest</span>
+        </a>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="student-registration.html">Registration</a>
+            <a href="student-login.html">Student Login</a>
+            <a href="admin-login.html">Admin Login</a>
+            <a href="missions.html">Missions</a>
+            <a href="leaderboard.html" class="active">Leaderboard</a>
+        </nav>
+
+    </header>
+
+    <main>
+
+        <!-- Leaderboard Heading -->
+        <section class="leaderboard-hero">
+
+            <p class="leaderboard-tag">CODE. COMPETE. ACHIEVE.</p>
+
+            <h1>Hall of <span>Champions</span></h1>
+
+            <p>
+                Discover the top coding performers, track achievements,
+                and get inspired to reach the next level.
+            </p>
+
+        </section>
+
+        <!-- Top Three Students -->
+        <section class="ranking-section">
+
+            <div class="ranking-heading">
+                <div>
+                    <h2>Top Performers</h2>
+                    <p>Meet this demo leaderboard's leading coders.</p>
+                </div>
+
+                <span class="ranking-label">TOP 3</span>
+            </div>
+
+            <div class="podium-grid">
+
+                <article class="podium-card second-place">
+
+                    <div class="rank-medal silver-medal">2</div>
+
+                    <h3>Arjun Kumar</h3>
+
+                    <p class="student-level">Code Explorer</p>
+
+                    <p class="podium-points">1,850 <span>PTS</span></p>
+
+                    <p class="podium-missions">18 missions completed</p>
+
+                    <span class="rank-badge">SILVER</span>
+
+                </article>
+
+                <article class="podium-card first-place">
+
+                    <div class="rank-medal gold-medal">1</div>
+
+                    <h3>Priya Sharma</h3>
+
+                    <p class="student-level">Coding Champion</p>
+
+                    <p class="podium-points">2,450 <span>PTS</span></p>
+
+                    <p class="podium-missions">25 missions completed</p>
+
+                    <span class="rank-badge">GOLD CHAMPION</span>
+
+                </article>
+
+                <article class="podium-card third-place">
+
+                    <div class="rank-medal bronze-medal">3</div>
+
+                    <h3>Rahul Verma</h3>
+
+                    <p class="student-level">Rising Coder</p>
+
+                    <p class="podium-points">1,620 <span>PTS</span></p>
+
+                    <p class="podium-missions">15 missions completed</p>
+
+                    <span class="rank-badge">BRONZE</span>
+
+                </article>
+
+            </div>
+
+        </section>
+
+        <!-- Complete Rankings Table -->
+        <section class="leaderboard-table-section">
+
+            <div class="ranking-heading">
+                <div>
+                    <h2>Student Rankings</h2>
+                    <p>Compare points and completed missions.</p>
+                </div>
+            </div>
+
+            <div class="table-container">
+
+                <table class="leaderboard-table">
+
+                    <caption>
+                        Sample CodeQuest student rankings
+                    </caption>
+
+                    <thead>
+                        <tr>
+                            <th scope="col">Rank</th>
+                            <th scope="col">Student</th>
+                            <th scope="col">Level</th>
+                            <th scope="col">Missions</th>
+                            <th scope="col">Points</th>
+                            <th scope="col">Achievement</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+
+                        <tr>
+                            <td><span class="rank-number gold-rank">#1</span></td>
+                            <td class="student-name">Priya Sharma</td>
+                            <td>Advanced</td>
+                            <td>25</td>
+                            <td class="points-cell">2,450</td>
+                            <td><span class="achievement gold-achievement">Champion</span></td>
+                        </tr>
+
+                        <tr>
+                            <td><span class="rank-number silver-rank">#2</span></td>
+                            <td class="student-name">Arjun Kumar</td>
+                            <td>Intermediate</td>
+                            <td>18</td>
+                            <td class="points-cell">1,850</td>
+                            <td><span class="achievement silver-achievement">Expert</span></td>
+                        </tr>
+
+                        <tr>
+                            <td><span class="rank-number bronze-rank">#3</span></td>
+                            <td class="student-name">Rahul Verma</td>
+                            <td>Intermediate</td>
+                            <td>15</td>
+                            <td class="points-cell">1,620</td>
+                            <td><span class="achievement bronze-achievement">Achiever</span></td>
+                        </tr>
+
+                        <tr>
+                            <td><span class="rank-number">#4</span></td>
+                            <td class="student-name">Sneha Reddy</td>
+                            <td>Beginner</td>
+                            <td>12</td>
+                            <td class="points-cell">1,200</td>
+                            <td><span class="achievement">Fast Learner</span></td>
+                        </tr>
+
+                        <tr>
+                            <td><span class="rank-number">#5</span></td>
+                            <td class="student-name">Kiran Patel</td>
+                            <td>Beginner</td>
+                            <td>9</td>
+                            <td class="points-cell">850</td>
+                            <td><span class="achievement">Rising Star</span></td>
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+            <p class="demo-notice">
+                Note: These are sample records for demonstration.
+                Actual rankings require a backend and database.
+            </p>
+
+        </section>
+
+        <!-- Call to Action -->
+        <section class="cta">
+
+            <h2>Your Name Could Be Here!</h2>
+
+            <p>
+                Practice coding, complete missions, and work toward
+                earning your place among the top performers.
+            </p>
+
+            <a href="missions.html" class="btn primary">
+                Explore Missions &rarr;
+            </a>
+
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <h3>&lt;/&gt; CodeQuest</h3>
+        <p>Learn. Code. Compete. Level Up.</p>
+        <p>&copy; 2026 CodeQuest. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

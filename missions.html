@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Programming Missions | CodeQuest</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <header class="navbar">
+        <a href="index.html" class="logo">
+            &lt;/&gt; Code<span>Quest</span>
+        </a>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="student-registration.html">Registration</a>
+            <a href="student-login.html">Student Login</a>
+            <a href="admin-login.html">Admin Login</a>
+            <a href="missions.html" class="active">Missions</a>
+            <a href="leaderboard.html">Leaderboard</a>
+        </nav>
+    </header>
+
+    <!-- Missions Hero -->
+    <main>
+        <section class="missions-hero">
+            <p class="missions-tag">YOUR NEXT CHALLENGE AWAITS</p>
+
+            <h1>Programming <span>Missions</span></h1>
+
+            <p>
+                Choose a challenge, practice your programming skills,
+                earn points, and level up your coding journey.
+            </p>
+        </section>
+
+        <!-- Mission Filters -->
+        <section class="missions-section">
+
+            <div class="mission-summary">
+                <div>
+                    <h2>Available Challenges</h2>
+                    <p>Select a mission to begin practicing.</p>
+                </div>
+
+                <span class="mission-count">6 MISSIONS</span>
+            </div>
+
+            <div class="mission-grid">
+
+                <!-- Mission 1 -->
+                <article class="mission-card">
+                    <div class="mission-card-top">
+                        <span class="language-icon python-icon">Py</span>
+                        <span class="difficulty easy">BEGINNER</span>
+                    </div>
+
+                    <p class="mission-category">PYTHON</p>
+                    <h3>Python Fundamentals</h3>
+
+                    <p class="mission-description">
+                        Learn variables, data types, input, output,
+                        and basic operations.
+                    </p>
+
+                    <div class="mission-meta">
+                        <span>6 Challenges</span>
+                        <span>100 Points</span>
+                    </div>
+
+                    <a href="#mission-python"
+                       class="mission-button"
+                       data-mission="Python Fundamentals">
+                        Start Mission &rarr;
+                    </a>
+                </article>
+
+                <!-- Mission 2 -->
+                <article class="mission-card">
+                    <div class="mission-card-top">
+                        <span class="language-icon java-icon">Ja</span>
+                        <span class="difficulty easy">BEGINNER</span>
+                    </div>
+
+                    <p class="mission-category">JAVA</p>
+                    <h3>Java Essentials</h3>
+
+                    <p class="mission-description">
+                        Explore Java syntax, variables, conditions,
+                        and loops.
+                    </p>
+
+                    <div class="mission-meta">
+                        <span>5 Challenges</span>
+                        <span>100 Points</span>
+                    </div>
+
+                    <a href="#mission-java"
+                       class="mission-button"
+                       data-mission="Java Essentials">
+                        Start Mission &rarr;
+                    </a>
+                </article>
+
+                <!-- Mission 3 -->
+                <article class="mission-card">
+                    <div class="mission-card-top">
+                        <span class="language-icon c-icon">C</span>
+                        <span class="difficulty medium">INTERMEDIATE</span>
+                    </div>
+
+                    <p class="mission-category">C PROGRAMMING</p>
+                    <h3>C Programming Quest</h3>
+
+                    <p class="mission-description">
+                        Practice functions, arrays, pointers,
+                        and memory basics.
+                    </p>
+
+                    <div class="mission-meta">
+                        <span>8 Challenges</span>
+                        <span>200 Points</span>
+                    </div>
+
+                    <a href="#mission-c"
+                       class="mission-button"
+                       data-mission="C Programming Quest">
+                        Start Mission &rarr;
+                    </a>
+                </article>
+
+                <!-- Mission 4 -->
+                <article class="mission-card">
+                    <div class="mission-card-top">
+                        <span class="language-icon algorithm-icon">&lt;/&gt;</span>
+                        <span class="difficulty medium">INTERMEDIATE</span>
+                    </div>
+
+                    <p class="mission-category">ALGORITHMS</p>
+                    <h3>Algorithm Explorer</h3>
+
+                    <p class="mission-description">
+                        Solve searching, sorting, and
+                        problem-solving challenges.
+                    </p>
+
+                    <div class="mission-meta">
+                        <span>8 Challenges</span>
+                        <span>250 Points</span>
+                    </div>
+
+                    <a href="#mission-algorithms"
+                       class="mission-button"
+                       data-mission="Algorithm Explorer">
+                        Start Mission &rarr;
+                    </a>
+                </article>
+
+                <!-- Mission 5 -->
+                <article class="mission-card">
+                    <div class="mission-card-top">
+                        <span class="language-icon dsa-icon">DS</span>
+                        <span class="difficulty hard">ADVANCED</span>
+                    </div>
+
+                    <p class="mission-category">DATA STRUCTURES</p>
+                    <h3>Data Structure Master</h3>
+
+                    <p class="mission-description">
+                        Explore stacks, queues, linked lists,
+                        trees, and graphs.
+                    </p>
+
+                    <div class="mission-meta">
+                        <span>10 Challenges</span>
+                        <span>300 Points</span>
+                    </div>
+
+                    <a href="#mission-dsa"
+                       class="mission-button"
+                       data-mission="Data Structure Master">
+                        Start Mission &rarr;
+                    </a>
+                </article>
+
+                <!-- Mission 6 -->
+                <article class="mission-card">
+                    <div class="mission-card-top">
+                        <span class="language-icon logic-icon">&#9733;</span>
+                        <span class="difficulty hard">ADVANCED</span>
+                    </div>
+
+                    <p class="mission-category">PROBLEM SOLVING</p>
+                    <h3>Logic Challenge</h3>
+
+                    <p class="mission-description">
+                        Improve logical thinking through
+                        practical coding problems.
+                    </p>
+
+                    <div class="mission-meta">
+                        <span>10 Challenges</span>
+                        <span>350 Points</span>
+                    </div>
+
+                    <a href="#mission-logic"
+                       class="mission-button"
+                       data-mission="Logic Challenge">
+                        Start Mission &rarr;
+                    </a>
+                </article>
+
+            </div>
+
+            <!-- Message Area -->
+            <div id="missionMessage"
+                 class="mission-message"
+                 role="status"
+                 aria-live="polite"></div>
+
+        </section>
+
+        <!-- Call to Action -->
+        <section class="cta">
+            <h2>Ready to Level Up?</h2>
+
+            <p>
+                Complete challenges and improve your programming skills.
+            </p>
+
+            <a href="student-login.html" class="btn primary">
+                Student Login &rarr;
+            </a>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <h3>&lt;/&gt; CodeQuest</h3>
+        <p>Learn. Code. Compete. Level Up.</p>
+        <p>&copy; 2026 CodeQuest. All rights reserved.</p>
+    </footer>
+
+    <!-- Mission Demonstration -->
+    <script>
+        const missionButtons = document.querySelectorAll("[data-mission]");
+        const missionMessage = document.getElementById("missionMessage");
+
+        missionButtons.forEach(function(button) {
+            button.addEventListener("click", function(event) {
+                event.preventDefault();
+
+                const missionName = button.dataset.mission;
+
+                missionMessage.textContent =
+                    missionName +
+                    " selected. Create a challenge page to start solving problems.";
+
+                missionMessage.scrollIntoView({
+                    behavior: "smooth",
+                    block: "center"
+                });
+            });
+        });
+    </script>
+
+</body>
+</html>
